@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
-const connectDb = require("./db/connectDB");
+const connectDB = require("./db/connectDB");
 const web = require("./routes/web");
 const fileupload = require("express-fileupload");
 const dotenv = require("dotenv");
 dotenv.config({ path:'./.env'});
 
 app.use(fileupload({ useTempFiles: true }));
-connectDb();
+connectDB();
 
 const cors = require('cors')
 app.use(cors())
