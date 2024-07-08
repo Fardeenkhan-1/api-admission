@@ -61,6 +61,7 @@ class TenderController {
       await TenderModel.findByIdAndDelete(id);
       res.status(200).json({ msg: "user deleted successfully" });
     } catch (error) {
+        
       console.log(error);
       res.status(400).json({ status: "failed", message: error.message });
     }
