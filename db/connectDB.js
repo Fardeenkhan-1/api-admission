@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const Live_URL =
-  "mongodb+srv://fardeenkhan1041:fardeenkhan1041@cluster0.opq9dqn.mongodb.net/Admission_API?retryWrites=true&w=majority";
-
+  "mongodb+srv://fardeenkhan1041:fardeen1234@ecommerce.efe7kuj.mongodb.net/Apitender?retryWrites=true&w=majority&appName=ecommerce";
 // const local_url = "mongodb://127.0.0.1:27017/blog123";
 
 const connectDB = () => {
@@ -18,5 +17,3 @@ const connectDB = () => {
   );
 };
 module.exports = connectDB;
-
-
